@@ -3,32 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Projects</title>
+    <title>Cadamion Hale - Software Engineer</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Portfolio</h1>
-        <p>Showcasing My Projects</p>
+
+    <!-- Sticky Header -->
+    <header id="header">
+        <h1>Cadamion Hale</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section id="projects">
-        <div class="project">
-            <h2>Music Player App</h2>
-            <a href="https://github.com/cadamion26/music-player-app" target="_blank">View Project on GitHub</a>
-        </div>
-        <div class="project">
-            <h2>Rock Paper Scissors Game</h2>
-            <a href="https://github.com/cadamion26/rock-paper-scissors-game" target="_blank">View Project on GitHub</a>
-        </div>
-    </section>
+    <!-- Main Content -->
+    <main>
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hello! I'm Cadamion Hale, a passionate software engineer focused on creating intuitive and efficient applications. I specialize in web development using JavaScript, HTML, and CSS, and I'm always learning to stay on the cutting edge of technology.</p>
+        </section>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <button id="contact-btn">Show My Email</button>
-        <p id="email-display" style="display: none;">Email: <a href="mailto:cadamionh@gmail.com">cadamionh@gmail.com</a></p>
-    </section>
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2>My Projects</h2>
 
+            <div class="project-card">
+                <h3>Music Player App</h3>
+                <button class="expand-button">Learn More</button>
+                <div class="project-details">
+                    <p>This music player app lets users play their favorite songs with a simple and clean UI. It supports basic controls like play, pause, and skip tracks.</p>
+                    <a href="https://github.com/cadamion26/music-player-app" target="_blank">View on GitHub</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3>Rock Paper Scissors Game</h3>
+                <button class="expand-button">Learn More</button>
+                <div class="project-details">
+                    <p>This classic game is built using JavaScript and features a simple UI. Play against the computer to see who wins!</p>
+                    <a href="https://github.com/cadamion26/rock-paper-scissors-game" target="_blank">View on GitHub</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>Feel free to get in touch if you'd like to collaborate or learn more about my work!</p>
+            <button id="email-button">Show Email</button>
+            <p id="email-display"></p>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Cadamion Hale. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
     <script src="script.js"></script>
 </body>
 </html>
